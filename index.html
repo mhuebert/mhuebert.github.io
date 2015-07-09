@@ -5,17 +5,6 @@
     <meta name="google-signin-client_id" content="496634047757-mi6fvvd7lajtf6qb02o1du9qa4omcqdo.apps.googleusercontent.com">
     <meta name="google-signin-scope" content="profile">
     <script src="https://apis.google.com/js/platform.js" ></script>
-    <script type="text/javascript">
-      window.signOut = function(){
-        gapi.auth2.getAuthInstance().signOut()
-      }
-      window.signIn = function(){
-        gapi.auth2.getAuthInstance().signIn()
-      }
-      window.googleSignInListen = function(cb){
-        gapi.auth2.getAuthInstance().currentUser.listen(cb);
-      }
-    </script>
     <script src="root/js/aws-sdk.js"></script>
     <script src="root/js/compiled/app.js"></script>
   </body>
