@@ -1,11 +1,11 @@
 .r-list {
-  border: 4px solid #ccc;
+  border: 4px solid rgba(0,0,0,0.1);
   border-style: none none solid;
   display: inline-block;
   margin: 0;
 }
 .r-list.hover {
-  border-color: #4d4d4d;
+  border-color: rgba(0,0,0,0.2);
 }
 .r-node {
   margin: 0 3px;
@@ -18,13 +18,12 @@
 .r-vector {
   background-color: #f1f9ff;
   display: inline-block;
-  border: 4px solid #e9effb;
-  border-width: 0 2px;
   padding: 2px 5px;
+  border-radius: 2px;
 }
 .r-number {
   padding: 6px 8px;
-  border-radius: 3px;
+  border-radius: 2px;
   margin: 3px;
   cursor: pointer;
   display: inline-block;
@@ -32,4 +31,20 @@
 .r-string:after {
   content: "\A";
   white-space: pre-wrap;
+}
+.r-with-newline {
+  display: block;
+}
+.r-with-newline > .r-list {
+  border-bottom: 5px solid rgba(0,0,0,0.03);
+  background: #1380ff;
+  color: #fff;
+  border-radius: 2px;
+}
+.r-with-newline > .r-list > .r-vector {
+  background: #fff;
+  color: #000;
+}
+.r-without-newline {
+  display: inline-block;
 }
