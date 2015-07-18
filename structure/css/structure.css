@@ -1,50 +1,103 @@
+.r-container {
+  padding: 0 0 7px 0;
+  text-indent: 7.8125px !important;
+}
+.r-container > * {
+  text-indent: 0;
+}
+.r-container > *:last-child {
+  margin-right: 7.8125px;
+}
+.r-node,
+.r-container {
+  display: inline-block;
+  box-sizing: border-box;
+}
+.r-list {
+  margin: 0;
+}
+.r-base {
+  margin-top: 10;
+}
+.r-base > .r-container {
+  margin-left: 0;
+}
+.r-container,
+.r-node {
+  margin-top: 7px;
+}
+.r-string textarea {
+  font-family: monospace;
+  background: transparent;
+  border: none;
+  padding: 5px 7.8125px;
+  margin: 0 0 -5px;
+  display: inline-block;
+  font-size: inherit;
+  background: rgba(255,159,74,0.1);
+  color: #a74b04;
+  resize: none;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+.r-string textarea:focus {
+  outline-width: 0;
+}
+.r-number {
+  margin: -2px;
+  padding: 2px;
+}
 .r-list {
   border: 4px solid rgba(0,0,0,0.1);
   border-style: none none solid;
-  display: inline-block;
-  margin: 0;
 }
-.r-list.hover {
-  border-color: rgba(0,0,0,0.2);
+.r-list >.r-node:first-child {
+  color: #1380ff;
+  font-family: helvetica neue;
+  font-weight: bold;
+  font-size: 13px;
 }
-.r-node {
-  margin: 0 3px;
-  display: inline-block;
-}
-.r-container {
-  padding: 5px 10px;
-  margin: 10px;
-}
-.r-vector {
-  background-color: #f1f9ff;
-  display: inline-block;
-  padding: 2px 5px;
-  border-radius: 2px;
-}
-.r-number {
-  padding: 6px 8px;
-  border-radius: 2px;
-  margin: 3px;
-  cursor: pointer;
-  display: inline-block;
-}
-.r-string:after {
-  content: "\A";
-  white-space: pre-wrap;
-}
-.r-with-newline {
-  display: block;
-}
-.r-with-newline > .r-list {
+.r-list.r-mod-special {
   border-bottom: 5px solid rgba(0,0,0,0.03);
   background: #1380ff;
   color: #fff;
   border-radius: 2px;
 }
-.r-with-newline > .r-list > .r-vector {
+.r-list.r-mod-special .r-node:first-child {
+  color: #003879;
+}
+.r-list.r-mod-special .r-comment {
+  color: #fffc35;
+}
+.r-list.r-mod-special .r-string textarea {
+  background: rgba(0,0,0,0.1);
+  color: #fff;
+}
+.r-list.r-mod-special > .r-vector {
   background: #fff;
   color: #000;
 }
-.r-without-newline {
-  display: inline-block;
+.r-list.hover {
+  border-color: rgba(0,0,0,0.2) !important;
+}
+.r-deref-label {
+  color: #ff8400;
+}
+.r-deref > .r-list {
+  border-color: #ff8400;
+}
+.r-base {
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+.r-vector {
+  background-color: #f1f9ff;
+  border-radius: 2px;
+}
+.r-number {
+  border-radius: 2px;
+  cursor: pointer;
+}
+.r-comment {
+  color: #777;
 }
