@@ -1,0 +1,83 @@
+.home {
+  font: normal normal bold 14px "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  width: 500px;
+  margin: 50px auto;
+}
+h3 {
+  font-size: 60px;
+  margin: 20px 0 0;
+}
+h3 a {
+  text-decoration: none;
+}
+a.block {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 4px 8px;
+}
+.date-bar {
+  background: #eee;
+  height: 10px;
+  margin: 10px 0 20px 0;
+  position: relative;
+}
+.date-bar-marker {
+  position: absolute;
+  margin: -5px 0px 0px -5px;
+  height: 20px;
+  width: 10px;
+  background: #797979;
+  transition: all 0.1s ease-out;
+  transition-property: margin, width;
+}
+.date-bar-marker:hover {
+  cursor: move;
+  width: 20px;
+  margin-left: -10px;
+}
+.date,
+.portion {
+  position: absolute;
+  width: 100px;
+  margin-top: -3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.date {
+  left: -120px;
+  text-align: right;
+  color: #f31dcb;
+}
+.portion {
+  right: -120px;
+  color: #797979;
+}
+.age-blocks {
+  width: 75px;
+  font-size: 12px;
+  float: left;
+  margin-right: 15px;
+}
+.age-block {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: #11d5f7;
+  margin-right: 5px;
+}
+.facts::after {
+  content: " ";
+  clear: both;
+  display: block;
+}
+.locations {
+  font-weight: normal;
+  font-size: 11px;
+  float: right;
+  line-height: 14px;
+  text-align: right;
+}
+.locations .current {
+  font-weight: bold;
+}
