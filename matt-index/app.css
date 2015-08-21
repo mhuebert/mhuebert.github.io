@@ -24,7 +24,8 @@ a.block {
 }
 .date-bar {
   height: 20px;
-  padding: 15px 0;
+  padding: 15px 0 0;
+  margin-bottom: 15px;
   position: relative;
 }
 .date-bar-marker {
@@ -141,7 +142,7 @@ a.block {
   background-color: #f7f7f7;
 }
 .country-markers > span.highlighted {
-  background-color: #cecece;
+  background-color: #82026a;
 }
 .map-container {
   float: left;
