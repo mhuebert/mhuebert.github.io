@@ -89,6 +89,8 @@ a.block {
   position: relative;
 }
 .map-container .country {
+  -webkit-transition: all 0.1s ease-in;
+          transition: all 0.1s ease-in;
   fill: #eee;
 }
 .map-container .country-selected {
@@ -109,14 +111,32 @@ a.block {
 }
 .location {
   margin: 2px 0;
-  padding: 0 2px;
+  padding: 0 3px;
   position: relative;
   -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in;
-  border-left: 5px solid transparent;
+  display: inline-block;
 }
-.location-highlight {
-  border-color: #cecece;
+.location::after {
+  display: inline-block;
+  float: left;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  -webkit-transition: all 0.2s ease-in;
+          transition: all 0.2s ease-in;
+  content: " ";
+  margin: 5px 0 0 -10px;
+}
+.location-highlight::after {
+  background-color: #cecece;
+}
+.location-current {
+  background: #f31dcb;
+  color: #fff;
+}
+.location-current::after {
+  display: none;
 }
 .country-markers {
   white-space: nowrap;
