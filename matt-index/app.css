@@ -23,27 +23,18 @@ a.block {
   padding: 4px 8px;
 }
 .date-bar {
-  background: #eee;
   height: 20px;
-  margin: 10px 0 20px 0;
+  padding: 15px 0;
   position: relative;
 }
 .date-bar-marker {
   position: absolute;
-  top: -15px;
+  top: 0;
   margin-left: -5px;
   height: 20px;
   width: 10px;
   background: #f31dcb;
   border-radius: 10px;
-  -webkit-transition: all 0.1s ease-out;
-          transition: all 0.1s ease-out;
-  -webkit-transition-property: margin, width;
-          transition-property: margin, width;
-}
-.date-bar-marker:hover {
-  width: 20px;
-  margin-left: -10px;
 }
 .date,
 .portion {
@@ -106,9 +97,6 @@ a.block {
   line-height: 14px;
   width: 215px;
 }
-.locations .current {
-  font-weight: bold;
-}
 .location {
   margin: 2px 0;
   padding: 0 3px;
@@ -129,7 +117,7 @@ a.block {
   margin: 5px 0 0 -10px;
 }
 .location-highlight::after {
-  background-color: #cecece;
+  background-color: #f31dcb;
 }
 .location-current {
   background: #f31dcb;
