@@ -151,6 +151,7 @@ a.block {
   float: left;
   width: 190px;
 }
-.map {
-  position: absolute;
+.map svg {
+  -webkit-transition: all 1.2s linear;
+          transition: all 1.2s linear;
 }
