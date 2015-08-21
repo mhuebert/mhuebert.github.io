@@ -42,7 +42,6 @@ a.block {
           transition-property: margin, width;
 }
 .date-bar-marker:hover {
-  cursor: move;
   width: 20px;
   margin-left: -10px;
 }
