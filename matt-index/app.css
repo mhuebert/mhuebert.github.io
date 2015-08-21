@@ -128,12 +128,13 @@ a.block {
   vertical-align: top;
   -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in;
+  background-color: #eee;
 }
 .country-markers > span:nth-child(odd) {
-  background: #f7f7f7;
+  background-color: #f7f7f7;
 }
 .country-markers > span.highlighted {
-  background: #cecece;
+  background-color: #cecece;
 }
 .map-container {
   float: left;
