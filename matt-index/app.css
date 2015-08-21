@@ -85,10 +85,13 @@ a.block {
           transition: all 0.1s ease-in;
   fill: #eee;
 }
-.map-container .country-selected {
+.map-container .country:hover {
+  fill: #ddd;
+}
+.map-container .country.country-selected {
   fill: #f31dcb;
 }
-.map-container .country-visited {
+.map-container .country.country-visited {
   fill: #82026a;
 }
 .locations {
@@ -147,4 +150,7 @@ a.block {
 .map-container {
   float: left;
   width: 190px;
+}
+.map {
+  position: absolute;
 }
