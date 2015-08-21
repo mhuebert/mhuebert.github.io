@@ -126,6 +126,8 @@ a.block {
   height: 20px;
   display: inline-block;
   vertical-align: top;
+  -webkit-transition: all 0.2s ease-in;
+          transition: all 0.2s ease-in;
 }
 .country-markers > span:nth-child(odd) {
   background: #f7f7f7;
