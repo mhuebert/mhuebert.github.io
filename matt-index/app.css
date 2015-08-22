@@ -55,11 +55,8 @@ a.block {
   color: #797979;
 }
 .age-blocks {
-  width: 75px;
   font-size: 11px;
   line-height: 15px;
-  float: left;
-  margin-right: 15px;
 }
 .age-block {
   width: 10px;
@@ -101,7 +98,8 @@ a.block {
   line-height: 14px;
   width: 215px;
 }
-.location {
+.location,
+.religion {
   margin: 2px 0;
   padding: 0 3px;
   position: relative;
@@ -129,6 +127,10 @@ a.block {
 }
 .location-current::after {
   display: none;
+}
+.religion-highlight {
+  background-color: #f31dcb;
+  color: #fff;
 }
 .country-markers {
   white-space: nowrap;
