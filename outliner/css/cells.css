@@ -567,7 +567,9 @@ span.CodeMirror-selectedtext { background: none; }
 .outliner-cell-error {
   font-size: 12px;
   color: #00a4ff;
-  vertical-align: bottom;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 4px;
   line-height: normal;
 }
 .outliner-cell-error {
@@ -716,7 +718,6 @@ input {
 }
 .autosize-input {
   position: relative;
-  vertical-align: middle;
 }
 .autosize-input-fake {
   opacity: 0;
@@ -727,6 +728,7 @@ input {
 .autosize-input-input {
   position: relative;
   z-index: 1;
+  vertical-align: top;
 }
 .hidden {
   display: none !important;
