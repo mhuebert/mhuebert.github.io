@@ -575,7 +575,7 @@ span.CodeMirror-selectedtext { background: none; }
 }
 .outliner-make-root {
   position: absolute;
-  left: -30px;
+  left: 0;
   color: #808080;
   width: 30px;
   height: 30px;
