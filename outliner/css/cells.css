@@ -428,7 +428,7 @@ span.CodeMirror-selectedtext { background: none; }
   overflow-x: hidden;
 }
 .cell {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .cell-path {
   background: #3b3b3b;
@@ -569,7 +569,7 @@ span.CodeMirror-selectedtext { background: none; }
   color: #00a4ff;
   vertical-align: top;
   display: inline-block;
-  margin-top: 4px;
+  margin-top: 6px;
   line-height: normal;
 }
 .outliner-cell-error {
@@ -617,7 +617,7 @@ span.CodeMirror-selectedtext { background: none; }
   box-sizing: border-box;
   vertical-align: middle;
   position: absolute;
-  top: 6px;
+  top: 8px;
   margin-left: -25px;
   cursor: pointer;
 }
@@ -661,11 +661,10 @@ span.CodeMirror-selectedtext { background: none; }
 .outliner-item-indent {
   cursor: text;
 }
-input {
+.autosize-input-input {
   border: none;
   outline: 0;
   padding: 0;
-  width: 80%;
 }
 .outliner-item-root {
   margin-left: 0;
@@ -715,12 +714,16 @@ input {
   outline: 0;
   font-size: 16px;
   font-family: "Helvetica Neue", sans-serif;
+  line-height: 22px;
+  resize: none;
 }
 .autosize-input {
   position: relative;
 }
 .autosize-input-fake {
   opacity: 0;
+  border: 1px solid #ffc0cb;
+  top: 100px;
   white-space: pre;
   position: absolute;
   z-index: 0;
@@ -729,6 +732,8 @@ input {
   position: relative;
   z-index: 1;
   vertical-align: top;
+  overflow: hidden;
+  background: transparent;
 }
 .hidden {
   display: none !important;
