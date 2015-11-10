@@ -1,0 +1,2 @@
+;; Analyzed by ClojureScript 1.7.145
+{:name misc.eval, :doc nil, :excludes #{}, :use-macros nil, :require-macros nil, :uses {interval misc.helpers, self-id app.state, slurp misc.helpers, cell misc.helpers, self app.state, html misc.helpers, hiccup misc.helpers}, :requires {xhr goog.net.XhrIo, goog.net.XhrIo goog.net.XhrIo, app.state app.state, misc.helpers misc.helpers}, :imports nil}
